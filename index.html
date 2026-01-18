@@ -1,185 +1,201 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> GDE - Trail Running</title>  
+    <title> GDE - Trail Running</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="gde1.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-<div class="container">
-    <div class="sub-container">
-        <h1> GDE TRAIL RUNNING  <br> Alumno: Magui Aristi</h1>
-    </div>
+    <div class="container">
+        <div class="sub-container">
+            <h1> GDE TRAIL RUNNING <br> Alumno: Magui Aristi</h1>
+        </div>
         <h2>OBJETIVO MENSUAL: Desarrollar una zancada económica y estable. </h2>
         <h2>FASE: Adquisición.</h2>
         <!--<h2 id ="pageTitle"> PRÓXIMA CARRERA Barriloche 130km 20/11/2025 </h2>
         <div id="countdown" class="countdown-llamativo"></div>-->
-                
-    <div class="sub-container">
-        <h4>SEMANA 1
-        <br>Objetivo semanal: Ordenar la zancada cuando sube el ritmo. </br>
-            </h4>   
-        <p>Entrada en calor </p>   
-        <p> 4 vueltas x 12 repeticiones </p>            
-        <div class="image-container">  
-            <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
-                <source src="Video1.mp4" type="video/mp4">
+
+        <div class="sub-container">
+            <h4>SEMANA 3
+                <br>Objetivo semanal: Economizar el gesto bajo fatiga. </br>
+            </h4>
+            <p>Entrada en calor </p>
+            <p> 4 vueltas x 14 repeticiones </p>
+            <div class="image-container">
+                <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>
+                    <source src="Video1.mp4" type="video/mp4">
                 </video>
-        </div>
-        <div class="image-container">  
-            <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
-                <source src="Video2.mp4" type="video/mp4">
+            </div>
+            <div class="image-container">
+                <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>
+                    <source src="Video2.mp4" type="video/mp4">
                 </video>
+            </div>
+
+            <div>
+                <p> Running </p>
+            </div>
+            <div class="column-container 1">
+                <div class="column">
+                    <h3>Dia 1
+                        <br> Lunes: 13 km trail Parque de Montaña.
+                    </h3>
+                    <p> -5 km de menor a mayor. </p>
+                    <p> -8 km ágiles. </p>
+                </div>
+                <div class="column">
+                    <h3>Dia 2
+                        <br> Miércoles: 13 km trail Senderos de Chacras.
+                    </h3>
+                    <p> -3 km ágiles calle. </p>
+                    <p> -2 km, 1' ágil x 2' suave en subida. </p>
+                    <p> -4 km, 40" fuertes x 20" suave. </p>
+                    <p> -4 km buenas sensaciones por senderos bajos. </p>
+                </div>
+                <div class="column">
+                    <h3>Dia 3
+                        <br> Jueves: 14 km trail Parque de Montaña.
+                    </h3>
+                    <p> -4 km ágiles. </p>
+                    <p> -10 km bajas pulsaciones. </p>
+                    <p> -completar el entreno en menos de 1'25" con 600+. </p>
+                </div>
+                <div class="column">
+                    <h3>Dia 4
+                        <br> Viernes: 9 km trail Senderos.
+                    </h3>
+                    <p> -3 km de menor a mayor. </p>
+                    <p> -3 km ágiles. </p>
+                    <p> -3 km, 40" fuertes x 40" suaves. </p>
+                </div>
+                <div class="column">
+                    <h3>Dia 5
+                        <br> Sábado: 28 km trail Arco.
+                    </h3>
+                    <p> -28 km meterlo en 3'10" con 1400+. </p>
+                </div>
+            </div>
+                <div>
+                    <audio controls>
+                        <source src="Audio1.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+                <div class="small-paragraph-container">
+                    <p> Método de recuperación </p>
+                    <p> - Automasaje de soleo y gemelo (3 minutos x pierna). </p>
+                </div>
+                <div class="image-container">
+                    <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>
+                        <source src="Video3.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div id="column-container 3">
+                    <canvas id="myChart-line-1"></canvas>
+                </div>
+            </div>
+
+            <div class="sub-container">
+                <h4>SEMANA 4
+                    <br>Objetivo semanal: Apretar sin perder continuidad en la subida. </br>
+                </h4>
+                <p>Entrada en calor </p>
+                <p> 4 vueltas x 12 repeticiones </p>
+                <div class="image-container">
+                    <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>
+                        <source src="Video4.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="image-container">
+                    <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>
+                        <source src="Video5.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div>
+                    <p> Running </p>
+                </div>
+                <div class="column-container 1">
+                    <div class="column">
+                        <h3>Dia 1
+                            <br> Lunes: 12 km trail Arco.
+                        </h3>
+                        <p> -12 km completar en el entreno en 1:10hs con 600+. </p>
+                        <p> -salida fuerte y últmos 4km fuertisimooo. </p>
+                        <p> -mitad de terreno corrible y mitad técnico. </p>
+                    </div>
+
+                    <div class="column">
+                        <h3>Dia 2
+                            <br> Miércoles: 12 km trail Parque de Montaña.
+                        </h3>
+                        <p> -2 km suave. </p>
+                        <p> -10 km, 20" ágiles x 20" suave. </p>
+                    </div>
+                    <div class="column">
+                        <h3>Dia 3
+                            <br> Jueves: 15 km trail Parque de Montaña.
+                        </h3>
+                        <p> -3 km suave. </p>
+                        <p> -4 km buenas sensaciones. </p>
+                        <p> -8 km bajas pulsaciones. </p>
+                    </div>
+                    <div class="column">
+                        <h3>Dia 4
+                            <br> Viernes: 12 km trail Senderos.
+                        </h3>
+                        <p> -4 km ágiles. </p>
+                        <p> -4 km, 30" fuertes x 30" suaves. </p>
+                        <p> -4 km bajas pulsaciones. </p>
+                    </div>
+                    <div class="column">
+                        <h3>Dia 5
+                            <br> Sábado: 23 km trail Arco.
+                        </h3>
+                        <p> -4 km ágiles. </p>
+                        <p> -6 km, 5' ágiles subiendo x 3' trekking exigido (Áspero). </p>
+                        <p> -6 km ágiles bajando. </p>
+                        <p> -3 km fuertes x río seco subiendo. </p>
+                        <p> -3 km, 30" fuertes x 30" ágiles. </p>
+                        <p> -1 km buenas sensaciones. </p>
+                    </div>
+                </div>
+                <div>
+                    <audio controls>
+                        <source src="Audio2.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+                <div class="small-paragraph-container">
+                    <p> Método de recuperación </p>
+                    <p> - Automasaje de soleo y gemelo (3 minutos x pierna). </p>
+                </div>
+
+                <div class="image-container">
+                    <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>
+                        <source src="Video6.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div id="column-container 4">
+                    <canvas id="myChart-line-2"></canvas>
+                </div>
+
+            </div>
+            <script src="script.js"></script>
+
         </div>
-      
-        <div><p> Running </p>
-        </div>
-        <div class="column-container 1">           
-           <div class="column">
-               <h3>Dia 1
-                    <br> Lunes: 10 km trail Parque de Montaña.</h3>
-                        <p> -3 km ágiles. </p>
-                        <p> -7 km mejor ritmo posible (por debajo de los 22'). </p>
-           </div>
-
-        <div class="column">
-               <h3>Dia 2
-                    <br> Miércoles: 10 km trail Parque de Montaña.</h3>
-                        <p> -2 km fuertes. </p>
-                        <p> -3 km, 20" fuertes x 20" suaves. </p>
-                        <p> -2 km suaves. </p>
-                        <p> -3 km fuertes. </p>
-           </div>
-        <div class="column">
-               <h3>Dia 3
-                    <br> Jueves mañana: 4 km calle por debajo de 4.</h3>
-                    <h3> Jueves tarde: 14 km trail Parque de Montaña. </h3>
-                        <p> -3 km ágiles. </p>
-                        <p> -3 km, 10 series de 300m subida fuerte x pausa pasiva 40". </p>
-                        <p> -3 km, 10 series de 300m bajada fuerte x pausa pasiva 30". </p>
-                        <p> -3 km, 10 series de 300m plano fuerte x pausa pasiva 30". </p>
-                        <p> -2 km ágiles. </p>
-           </div>
-        <div class="column">
-               <h3>Dia 4
-                    <br> Viernes: 12 km calle.</h3>
-                        <p> -3 km ágiles. </p>
-                        <p> -5 km, 200m subida fuerte x 100 bajada ágiles. </p>
-                        <p> -4 km, 45" fuertes x 45" suaves. </p>
-           </div>
-        <div class="column">
-               <h3>Dia 5 
-                    <br> Sábado: 22 km trail Arco.</h3>
-                        <p> -22 km bajas pulsaciones. </p>
-           </div>
-</div>
-<div>
-    <audio controls>
-    <source src="Audio1.mp3" type="audio/mpeg">
-        Tu navegador no soporta el elemento de audio.
-        </audio>
-</div>
-<div class="small-paragraph-container">
-           <p> Método de recuperación </p>
-           <p> - Automasaje de soleo y gemelo (3 minutos x pierna). </p>       
-       </div> 
-        <div class="image-container">  
-            <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
-                <source src="Video3.mp4" type="video/mp4">
-                </video>
-        </div>  
-              
-        <div id="column-container 3">
-        <canvas id="myChart-line-1"></canvas>
-        </div>      
-    </div>
-
-     <div class="sub-container">
-        <h4>SEMANA 2
-            <br>Objetivo semanal: Ordenar la zancada cuando sube el ritmo. </br>
-        </h4>
-        <p>Entrada en calor </p>   
-        <p> 4 vueltas x 13 repeticiones </p>
-        <div class="image-container">  
-            <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
-                <source src="Video4.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="image-container">  
-            <video width="100%"  class="responsive-video" style="margin-top: 35px;" controls>
-                <source src="Video5.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div><p> Running </p>
-        </div>    
-        <div class="column-container 1">           
-           <div class="column">
-               <h3>Dia 1                    
-                    <br> Lunes: 12 km trail Arco.</h3>
-                        <p> -2 km ágiles. </p>
-                        <p> -5 km, 2' fuerte x 4' suave. </p>
-                        <p> -5 km mejor ritmo posible. </p>
-           </div>
-
-            <div class="column">
-               <h3>Dia 2
-                    <br> Miércoles: 15 km trail Parque de Montaña.</h3>
-                        <p> -15 km fuertes. </p>
-           </div>
-            <div class="column">
-               <h3>Dia 3
-                    <br> Jueves: 12 km calle.</h3>
-                        <p> -12 km ágiles. </p>
-           </div>
-            <div class="column">
-               <h3>Dia 4
-                    <br> Viernes: 20 km trail Arco.</h3>
-                        <p> -20 km de menor a mayor. </p>
-           </div>
-           <div class="column">
-               <h3>Dia 5 
-                    <br> Sábado: 15 km calle.</h3>
-                        <p> -15 km fuertes. </p>
-           </div>
-    </div>
-<div>
-    <audio controls>
-    <source src="Audio2.mp3" type="audio/mpeg">
-        Tu navegador no soporta el elemento de audio.
-        </audio>
-</div>
-<div class="small-paragraph-container">
-           <p> Método de recuperación </p>
-           <p> - Automasaje de soleo y gemelo (3 minutos x pierna). </p>       
-       </div> 
-
-        <div class="image-container">  
-            <video width="100%" class="responsive-video" style="margin-top: 35px;" controls>            
-                <source src="Video6.mp4" type="video/mp4">
-                </video>
-        </div> 
-                        
-        <div id="column-container 4">
-        <canvas id="myChart-line-2"></canvas>
-        </div>
-
-    </div> -->
-
-    <script src="script.js"></script>
-
-</div> 
-<img class="" src="logo gde blanco horizontal.png" alt="Blanco">     
+        <img class="" src="logo gde blanco horizontal.png" alt="Blanco">
 </body>
 
 </html>
-
-
-
