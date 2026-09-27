@@ -23,14 +23,52 @@ const dataLine2 = {
     tension: 0.1
   }]
 };
+
+const chartFont = {
+  family: 'Tajawal, Arial, sans-serif',
+  size: 12,
+  weight: '500'
+};
+
 // Configuración del gráfico de líneas
 const configLine = {
   type: 'line',
   data: dataLine1, // Puede cambiar esto a dataLine2 para mostrar el gráfico de la segunda sección
   options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        labels: {
+          color: '#374151',
+          font: chartFont
+        }
+      },
+      tooltip: {
+        titleFont: chartFont,
+        bodyFont: chartFont,
+        footerFont: chartFont
+      }
+    },
     scales: {
+      x: {
+        ticks: {
+          color: '#4b5563',
+          font: chartFont
+        },
+        grid: {
+          color: 'rgba(15, 23, 42, 0.08)'
+        }
+      },
       y: {
-        beginAtZero: true
+        beginAtZero: true,
+        ticks: {
+          color: '#4b5563',
+          font: chartFont
+        },
+        grid: {
+          color: 'rgba(15, 23, 42, 0.08)'
+        }
       }
     }
   }
@@ -42,18 +80,48 @@ const myChartLine2 = new Chart(document.getElementById('myChart-line-2'), {
   type: 'line',
   data: dataLine2,
   options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        labels: {
+          color: '#374151',
+          font: chartFont
+        }
+      },
+      tooltip: {
+        titleFont: chartFont,
+        bodyFont: chartFont,
+        footerFont: chartFont
+      }
+    },
     scales: {
+      x: {
+        ticks: {
+          color: '#4b5563',
+          font: chartFont
+        },
+        grid: {
+          color: 'rgba(15, 23, 42, 0.08)'
+        }
+      },
       y: {
-        beginAtZero: true
+        beginAtZero: true,
+        ticks: {
+          color: '#4b5563',
+          font: chartFont
+        },
+        grid: {
+          color: 'rgba(15, 23, 42, 0.08)'
+        }
       }
     }
   }
 });
 
-
 function actualizarDiasRestantes() {
   // Fecha objetivo fija
-  const objetivoDate = new Date('2026-10-11');
+  const objetivoDate = new Date('2026-09-27');
   const currentDate = new Date();
   const timeDiff = objetivoDate - currentDate;
   const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
@@ -63,6 +131,7 @@ function actualizarDiasRestantes() {
   const countdownElement = document.getElementById('countdown');
   countdownElement.innerHTML = `<span class="cuenta-regresiva-titulo">CUENTA REGRESIVA</span><br><span class="cuenta-regresiva-numero">${days}d : ${hours}h : ${minutes}m : ${seconds}s</span>`;
 }
+
   // Crear dos nuevas instancias de HTMLVideoElement para cada sección
   let Semana_1_video_1 = document.createElement("video");
   let Semana_1_video_2 = document.createElement("video");
