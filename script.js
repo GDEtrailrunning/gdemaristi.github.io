@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-  actualizarDiasRestantes();
-  setInterval(actualizarDiasRestantes, 24*60*60*1000); // Actualizar diario
-  // Datos para el gráfico de líneas
+  //actualizarDiasRestantes();
+  //setInterval(actualizarDiasRestantes, 24*60*60*1000); // Actualizar diario
+  //Datos para el gráfico de líneas
 const dataLine1 = {
-  labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4', 'Día 5'], // Etiquetas de los días
+  labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4'], // Etiquetas de los días
   datasets: [{
-    label: 'Km recorridos en Semana 39',
-    data: [8, 16, 9, 8, 12], // Datos de los km recorridos en cada día
+    label: 'Km recorridos en Semana 41',
+    data: [8, 7, 7, 6, 17], // Datos de los km recorridos en cada día
     borderColor: 'rgba(75, 192, 192, 1)',
     fill: true,
     tension: 0.1
@@ -14,11 +14,11 @@ const dataLine1 = {
 };
 
 const dataLine2 = {
-  labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4', 'Día 5'], // Etiquetas de los días], // Etiquetas de los días
+  labels: ['Día 1', 'Día 2', 'Día 3', 'Día 4'], // Etiquetas de los días
   datasets: [{
-    label: 'Km recorridos en Semana 40',
-    data:[6, 4, 4.5, 3, 75],// Datos de los km recorridos en cada día
-    borderColor: 'rgba(153, 102, 255, 1)',
+    label: 'Total Km recorridos en Semana 42',
+    data: [10, 14, 9, 11, 19],// Datos de los km recorridos en cada día
+    borderColor: 'rgba(45, 78, 199, 1)',
     fill: true,
     tension: 0.1
   }]
@@ -121,7 +121,7 @@ const myChartLine2 = new Chart(document.getElementById('myChart-line-2'), {
 
 function actualizarDiasRestantes() {
   // Fecha objetivo fija
-  const objetivoDate = new Date('2026-10-11');
+  const objetivoDate = new Date('2026-09-27');
   const currentDate = new Date();
   const timeDiff = objetivoDate - currentDate;
   const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
